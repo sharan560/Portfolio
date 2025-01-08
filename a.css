@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #ffff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:rgb(127, 25, 25);
+    padding: 30px;
+   
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+#header a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 19px;
+   
+}
+#header a:hover{
+    border-bottom: 4px solid black;
+}
+nav  li{
+    list-style-type: none;
+}
+
+
+#home img{
+    width: 500px;
+    float: right;
+    border-radius: 49%;
+    margin-top: 20px;
+
+}
+#home{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    font-size: 40px;
+    margin-top: 70px;
+   
+}
+#About{
+    border: 2px solid rgb(253, 251, 251) ;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(233, 231, 224);
+    width: 95%;
+    height: 500px;
+    justify-content:start;
+    border-radius: 10px;
+    color: #080808;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(142, 142, 142); 
+}
+#About img{
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-top: 35px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+}
+#About p {
+    font-size: 22px; 
+    line-height: 1.7;
+    margin: 0; 
+    flex: 1; 
+    margin-left: 10px;
+}
+#skills{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-evenly;
+   flex: 1;
+   
+
+}
+#skillsd{
+    width: 350px;
+    height: 450px;
+    background-color:rgb(233, 231, 224);
+    color:white ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ffff;
+   
+}
+#skillsd p{
+        margin: 5px;
+        background-color: rgb(127, 25, 25);
+        border-radius: 70px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        font-size: 30px;
+    
+}
+#skillsd ul{
+    color: black;
+    list-style-type: none;
+    font-size: 25px;
+    text-align: center;  
+     
+}
+#skillsd li{
+    padding: 10px;
+    background-color:rgb(50, 49, 49);
+    color: aliceblue;
+    margin: 20px;
+    border-radius: 25px;
+}
+#skillsd li:hover{
+    background-color: rgb(102, 99, 99);
+}
