@@ -60,7 +60,7 @@ nav  li{
     flex-wrap: wrap;
     background-color: #E5D0AC;
     width: 95%;
-    height: 500px;
+    height: auto;
     justify-content:start;
     border-radius: 10px;
     color: #080808;
@@ -68,20 +68,18 @@ nav  li{
     box-shadow: 5px 5px 5px rgb(142, 142, 142); 
 }
 #About img{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 300px;
     float: right;
-    margin-top: 35px;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    height: auto;
+    margin: 20px;
     border-radius: 20%;
 }
 #About p {
     font-size: 22px; 
     line-height: 1.7;
-    margin: 0; 
     flex: 1; 
-    margin-left: 10px;
+    margin:20px;
 }
 #skills{
     display:flex;
@@ -89,8 +87,6 @@ nav  li{
     align-items: center;
    justify-content: space-evenly;
    flex: 1;
-   
-
 }
 #skillsd{
     width: 350px;
@@ -99,6 +95,7 @@ nav  li{
     color:white ;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #ffff;
+    margin: 20PX;
    
 }
 #skillsd p{
@@ -106,7 +103,7 @@ nav  li{
         background-color: rgb(127, 25, 25);
         border-radius: 70px;
         padding: 20px;
-        margin: 20px;
+
         text-align: center;
         font-size: 30px;
     
@@ -124,35 +121,113 @@ nav  li{
     color: aliceblue;
     margin: 20px;
     border-radius: 25px;
+    transition: background-color 0.3s ease;
+
 }
 #skillsd li:hover{
     background-color: rgb(102, 99, 99);
 }
 
-#projects{
-    border: 2px solid rgb(253, 251, 251) ;
+
+#projects {
+    border: 2px solid #080808;
     display: flex;
-    flex-wrap: wrap;
-    background-color: #E5D0AC;
-    width: 95%;
-    height: 500px;
-    justify-content:start;
+    flex-wrap: wrap; 
+    background-color: #080808;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto; 
+    height: auto; 
     border-radius: 10px;
     color: #080808;
-    align-items: center;
-    box-shadow: 5px 5px 5px rgb(142, 142, 142); 
-    margin-left: 30px;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
 }
+
+.project {
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 250px; 
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.1); 
+    
+}
+.project i:hover{
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5%;
+}
+.overlay img{
+    width: 300px;
+    height: 200px;
+    opacity: 100%;
+    
+
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.overlay p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
 
 #contact {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     background:#E5D0AC;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
     color:#080808;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #contact h1 {
@@ -273,3 +348,108 @@ footer a img {
 footer a img:hover {
     transform: scale(1.4);
 }
+
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    #home {
+        flex-direction: column;
+        font-size: 30px;
+    }
+
+    #About {
+        flex-direction: column;
+        align-items: center;
+    }
+    #projects{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #skills {
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 100%; 
+        max-width: 100%;
+        height: 180px; 
+    }
+
+    .overlay h3 {
+        font-size: 0.9rem;
+    }
+
+    .overlay p {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 480px) {
+    #home img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    #About p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #skillsd {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        
+
+    }
+    #skills
+    {
+        gap: 20px;
+    }
+
+
+    #projects {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #projects img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5%;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .project {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+        height: 200px; 
+    }
+
+    .overlay h3 {
+        font-size: 1rem;
+    }
+
+    .overlay p {
+        font-size: 0.8rem;
+    }
+}
+
