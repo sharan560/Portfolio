@@ -322,7 +322,7 @@ nav li {
     border-radius: 100px;
     color: white;
     align-items: center;
-    box-shadow: 5px 5px 10px #79d6ca;
+    box-shadow: 5px 5px 10px black;
     opacity: 0;
     transform: translateY(50px);
     animation: fadeIn 1s ease-out forwards;
@@ -727,8 +727,8 @@ form {
 
 .form-group input,
 .form-group textarea {
-    padding: 10px 15px;
-    font-size: 1rem;
+    padding: 15px 15px;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
     background-color: #958888;
@@ -737,7 +737,7 @@ form {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: 2px solid rgb(127, 25, 25);
+    outline: 2px solid black ;
 }
 
 .form-group textarea {
