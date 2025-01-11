@@ -221,6 +221,7 @@ nav {
     padding: 12px;
     font-weight: bold;
     position: relative;
+    box-shadow: 0px 3px 2px #3e3e3e;
 }
 
 nav h2,
@@ -737,7 +738,7 @@ form {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: 2px solid black ;
+    outline: 2px solid black;
 }
 
 .form-group textarea {
